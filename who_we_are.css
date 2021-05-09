@@ -1,0 +1,7 @@
+.description a{
+    color: #000;
+}
+
+.description a:hover{
+    color: #7b4425;
+}
