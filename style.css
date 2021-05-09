@@ -1,0 +1,272 @@
+/* Color pallette*/
+:root{
+    --main-green-color: #95c22b;
+    --dark-green-color: #507b00;
+    --darker-green-color: #28430a;
+    --light-brown-color: #7b4425;
+    --dark-brown-color: #63371e;     /* Browns can be used for buttons */  
+
+}
+
+
+*       /* Selects all elements */
+{
+    padding: 0;
+  margin: 0;
+}
+
+
+
+/* body{
+	height:100vh;
+	display:grid;
+	grid-template-columns: auto minmmax(0, 40rem) auto;
+	grid-template-rows: 5rem auto 5rem;
+} */
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 29px;
+}
+
+/* main{
+	font-size:20px;
+	grid-column-start: 2;
+	grid-row-start: 2;
+} */
+
+div.scroll {
+  background-color: #fed9ff;
+  width: 600px;
+  height: 150px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Some utility classes */
+
+li{
+	font-size: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size:28px;
+    color: #fff;
+}
+
+.p-1{padding: 1rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
+
+.py-b-1{
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: #fff;
+    padding: 0.5rem;
+    justify-self: center;
+    margin-left: 20px;
+    border-radius: 3px;
+    background-color: var(--main-green-color);
+    border: none;
+}
+
+.btn:hover{
+    background-color: var(--dark-green-color);
+    cursor: pointer;
+}
+
+
+
+/* Navigation bar */
+
+#navbar h1{
+    margin-bottom: 1.5rem;
+    color:var(--dark-brown-color);
+}
+
+.navbar-container
+{
+    color: #fff;
+    background-color: var(--main-green-color);
+}
+
+.logo
+{
+    height: 200px;
+}
+
+#navbar h1{
+    text-align: center;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;   
+}
+
+
+#navbar ul li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin: 0 4rem 0 4rem;
+}
+
+#navbar li a:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.3s ease-in;
+    color: var(--light-brown-color);
+}
+
+
+/* Why and how */
+
+#why-how
+{
+    padding: 2rem 0 1rem 0;
+}
+
+.why-how-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    justify-content: space-evenly;
+    height: 50vh;
+    align-items: center;
+}
+
+.main-img{
+    background: url(https://info.waxie.com/hs-fs/hubfs/The-Future-of-Recycling-in-America-01.png?width=2917&name=The-Future-of-Recycling-in-America-01.png) no-repeat center center/cover;
+    min-height: 100%;
+    min-width: 80%; 
+}
+
+
+.why{
+    padding: 1.5rem;
+}
+
+.how
+{
+    display: block;
+    padding: 1.5rem;
+}
+
+#reasons .reasons-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    height: 60vh;
+}
+
+
+#reasons .recycling-img
+{
+    background: url(https://i.pinimg.com/originals/95/ca/30/95ca302dcca97dd21416b04c0d742672.jpg) no-repeat center center/cover;   
+    width: 80%;
+    /* min-width: 80%;  */
+    
+}
+
+
+.reasons-text
+{   
+    text-align:center;
+}
+
+.reasons-text p{
+    margin-bottom: 1rem;
+}
+
+.reasons-text li{
+    padding: 0.5rem;
+}
+
+
+/* Tips */
+
+.tip-container
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tip
+{
+    padding: 0.5rem;
+    color: var(--light-brown-color);
+}
+
+.tip-container input{
+    padding: 1.2rem 1rem 1.2rem 1.0rem;
+}
+
+
+/* Footer */
+.footer-container a{
+    color: #fff;
+    font-size: 24px;
+}
+
+#main-footer .footer-container
+{
+    background: var(--dark-brown-color);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media i:hover
+{
+    color: var(--main-green-color)
+}
+
+.sign-up{
+    justify-content: center;
+}
+
+.sign-up input
+{
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.sign-up button{
+    margin-left: 3rem;
+}
+
+
+.footer-container .legal
+{   
+    display: block;
+}
+
+.footer-container .legal{
+    display: block;
+    align-self: center;
+    padding: 1.5rem;
+    font-size: 14px;
+    grid-column: 1 / span4;
+}
+
+
+
